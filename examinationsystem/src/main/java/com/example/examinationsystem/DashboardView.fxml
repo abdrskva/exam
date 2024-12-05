@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.examinationsystem.DashboardController">
+    <!-- Top Navigation Bar -->
+    <top>
+        <HBox spacing="20" style="-fx-background-color: #3F51B5; -fx-padding: 10;">
+            <Label text="Online Examination System" style="-fx-font-size: 20; -fx-text-fill: white;"/>
+        </HBox>
+    </top>
+
+    <!-- Left Sidebar -->
+    <left>
+        <VBox spacing="10" style="-fx-background-color: #ECEFF1; -fx-padding: 10;">
+            <Button text="Dashboard" onAction="#handleDashboardClick"/>
+            <Button text="Questions" onAction="#handleQuestionsClick"/>
+            <Button text="Take Exam" onAction="#handleExamClick"/>
+            <Button text="Logout" onAction="#handleLogoutClick" style="-fx-background-color: #FF5252; -fx-text-fill: white;"/>
+        </VBox>
+    </left>
+
+    <!-- Center Content -->
+    <center>
+        <GridPane hgap="10" vgap="10" style="-fx-padding: 20;">
+            <VBox alignment="CENTER" style="-fx-background-color: #2196F3; -fx-padding: 20;" GridPane.rowIndex="0" GridPane.columnIndex="0">
+                <Label text="Total Students" style="-fx-text-fill: white; -fx-font-size: 18;"/>
+                <Label fx:id="totalStudentsLabel" text="10" style="-fx-text-fill: white; -fx-font-size: 24;"/>
+            </VBox>
+            <VBox alignment="CENTER" style="-fx-background-color: #9C27B0; -fx-padding: 20;" GridPane.rowIndex="0" GridPane.columnIndex="1">
+                <Label text="Total Exams" style="-fx-text-fill: white; -fx-font-size: 18;"/>
+                <Label fx:id="totalExamsLabel" text="3" style="-fx-text-fill: white; -fx-font-size: 24;"/>
+            </VBox>
+            <VBox alignment="CENTER" style="-fx-background-color: #4CAF50; -fx-padding: 20;" GridPane.rowIndex="1" GridPane.columnIndex="0">
+                <Label text="Total Questions" style="-fx-text-fill: white; -fx-font-size: 18;"/>
+                <Label fx:id="totalQuestionsLabel" text="89" style="-fx-text-fill: white; -fx-font-size: 24;"/>
+            </VBox>
+            <VBox alignment="CENTER" style="-fx-background-color: #F44336; -fx-padding: 20;" GridPane.rowIndex="1" GridPane.columnIndex="1">
+                <Label text="Notices" style="-fx-text-fill: white; -fx-font-size: 18;"/>
+                <Label fx:id="noticesLabel" text="1" style="-fx-text-fill: white; -fx-font-size: 24;"/>
+            </VBox>
+        </GridPane>
+    </center>
+</BorderPane>

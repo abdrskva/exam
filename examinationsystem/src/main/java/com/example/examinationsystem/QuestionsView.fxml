@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.examinationsystem.QuestionsController">
+    <center>
+        <TableView fx:id="questionsTable">
+            <columns>
+                <TableColumn text="Sr. No."/>
+                <TableColumn text="Exam Name"/>
+                <TableColumn text="Question"/>
+                <TableColumn text="Option 1"/>
+                <TableColumn text="Option 2"/>
+                <TableColumn text="Option 3"/>
+                <TableColumn text="Option 4"/>
+                <TableColumn text="Answer"/>
+            </columns>
+        </TableView>
+        <Button text="Add New Question" onAction="#handleAddQuestion"/>
+    </center>
+</BorderPane>

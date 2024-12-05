@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.examinationsystem.LoginController">
+    <center>
+        <VBox spacing="20" alignment="CENTER">
+            <Label text="Student Login" style="-fx-font-size: 24; -fx-text-fill: #3F51B5;"/>
+            <TextField fx:id="emailField" promptText="Email" />
+            <PasswordField fx:id="passwordField" promptText="Password" />
+            <Button text="Login" onAction="#handleLogin" style="-fx-background-color: #3F51B5; -fx-text-fill: white;"/>
+        </VBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.examinationsystem.ExamController">
+    <center>
+        <VBox spacing="20" alignment="CENTER">
+            <Label text="Exam Questions" style="-fx-font-size: 18;"/>
+            <RadioButton text="Option 1"/>
+            <RadioButton text="Option 2"/>
+            <RadioButton text="Option 3"/>
+            <RadioButton text="Option 4"/>
+            <Button text="Submit Answer"/>
+        </VBox>
+    </center>
+</BorderPane>
